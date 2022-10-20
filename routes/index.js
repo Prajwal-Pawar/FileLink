@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-
+const db = require('../configs/mongoose');
 const upload = require('../configs/multer');
 
 // getting home controller

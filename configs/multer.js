@@ -1,7 +1,7 @@
 const multer = require('multer');
 
 const upload = multer({
-  dest: 'uploads',
+  dest: 'uploads/',
 });
 
 module.exports = upload;
