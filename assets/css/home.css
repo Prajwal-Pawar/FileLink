@@ -1,0 +1,92 @@
+@font-face {
+  font-family: poppins;
+  src: url('../fonts/Poppins-Regular.ttf');
+}
+
+body {
+  font-family: poppins;
+  background-color: #1c1c1c;
+}
+
+#container {
+  width: 50%;
+  margin: 15% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#container form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+#container form #file {
+  display: none;
+}
+
+#container form #file-input {
+  padding: 10px;
+  border: 1px solid #dcdde1;
+  border-radius: 7px;
+  font-size: 1.2rem;
+  color: #dcdde1;
+  transition: 0.3s ease-in-out;
+}
+
+#container form #file-input:hover {
+  cursor: pointer;
+  background-color: #dcdde1;
+  color: #000;
+}
+
+/* styling file inputs button */
+/* #container form #file::file-selector-button {
+  padding: 10px;
+  border: none;
+  border-radius: 7px;
+  font-size: 0.9rem;
+  background-color: #eaeaea;
+} */
+
+#container form #password-desc {
+  color: #b2b2b2;
+  padding: 30px 0px 10px 0px;
+}
+
+#container form #password {
+  padding: 10px;
+  border: 1px solid #3c4048;
+  border-radius: 7px;
+  font-size: 1rem;
+}
+
+#container form button {
+  margin: 20px 0px;
+  padding: 10px;
+  background-color: #00abb3;
+  border: 1px solid #00abb3;
+  border-radius: 7px;
+  font-size: 1.2rem;
+  color: #1c1c1c;
+  transition: 0.3s ease-in-out;
+}
+
+#container form button:hover {
+  cursor: pointer;
+  background-color: #018e96;
+}
+
+#upload-success-message {
+  font-size: 1.1rem;
+  color: #b2b2b2;
+}
+
+#file-link {
+  padding: 5px 0px 30px 0px;
+  color: #00abb3;
+}

@@ -9,6 +9,9 @@ app.use(express.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
 app.set('views', './views');
 
+// setting static files
+app.use(express.static('./assets'));
+
 // using routes
 app.use('/', require('./routes'));
 

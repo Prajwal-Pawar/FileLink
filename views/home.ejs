@@ -5,20 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>File Link</title>
+    <link rel="stylesheet" href="/css/home.css" />
   </head>
   <body>
-    <!-- getting file download url -->
-    <% if(locals.fileLink != null){ %>
-    <div>Your file is uploaded</div>
-    <a href="<%= locals.fileLink %>"><%= locals.fileLink %></a>
-    <% } %>
+    <div id="container">
+      <!-- getting file download url -->
+      <% if(locals.fileLink != null){ %>
+      <div id="upload-success-message">
+        Your file is uploaded and file link is
+      </div>
+      <a href="<%= locals.fileLink %>" id="file-link"><%= locals.fileLink %></a>
+      <% } %>
 
-    <form action="/upload" method="POST" enctype="multipart/form-data">
-      <label for="file">File : </label>
-      <input type="file" id="file" name="file" required />
-      <label for="password">Password : </label>
-      <input type="password" id="password" name="password" />
-      <button type="submit">Share</button>
-    </form>
+      <form action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="file" id="file-input">Upload File</label>
+        <input type="file" id="file" name="file" required />
+        <label for="password" id="password-desc"
+          >Enter the password to encypt your file. (optional)</label
+        >
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter the password"
+        />
+        <button type="submit">Share</button>
+      </form>
+    </div>
   </body>
 </html>
