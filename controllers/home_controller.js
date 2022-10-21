@@ -36,7 +36,9 @@ module.exports.download = async (req, res) => {
   // if file have a password
   if (file.password != null) {
     if (req.body.password == null) {
-      res.render('password');
+      res.render('password', {
+        filename: file.originalName,
+      });
       return;
     }
 
