@@ -7,6 +7,12 @@
     <title>File Link</title>
   </head>
   <body>
+    <!-- getting file download url -->
+    <% if(locals.fileLink != null){ %>
+    <div>Your file is uploaded</div>
+    <a href="<%= locals.fileLink %>"><%= locals.fileLink %></a>
+    <% } %>
+
     <form action="/upload" method="POST" enctype="multipart/form-data">
       <label for="file">File : </label>
       <input type="file" id="file" name="file" required />
