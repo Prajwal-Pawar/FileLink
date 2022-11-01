@@ -7,15 +7,16 @@
 
 - Technologies used :
   1. express
-  2. Mongodb : for DB
-  3. ejs : view engine
+  2. Nodejs
+  3. Mongodb : for DB
 
 ---
 
 - libraries used :
 
   1. mongoose
-  2. multer : for file upload
-  3. bcrypt : for encrypting password
+  2. ejs : view engine
+  3. multer : for file upload
+  4. bcrypt : for encrypting password
 
 ---
